@@ -94,7 +94,7 @@ public class Oprators {
         System.out.println(whetherFalse);
 
         // != (Not equal to)
-        int z= 25;
+      /*  int z= 25;
         int y= 27;
         boolean ifTrue =  z !=y; // 25 < 27 = 25 Not equal to 27
         System.out.println(ifTrue);
@@ -102,7 +102,7 @@ public class Oprators {
         int z1= 25;
         int y1= 25;
         boolean ifTrue1 =  z1 !=y1; // 25 == 25
-        System.out.println(ifTrue1);
+        System.out.println(ifTrue1);*/
 
 
 
