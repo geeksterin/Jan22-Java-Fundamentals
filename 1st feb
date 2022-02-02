@@ -1,0 +1,125 @@
+import java.util.Scanner;
+public class MyClass {
+    public static void main(String args[]) {
+        
+      Scanner s = new Scanner(System.in);
+        int num = s.nextInt();
+        
+        int ans = 0;
+        while(ans * ans <= num){
+            ans = ans + 1;
+        }
+        ans = ans - 1;
+        System.out.println(ans);
+        
+        
+        
+        
+        
+        // int binary = 0 , pow = 1;
+        // while(num > 0){
+        //     int lastDigit = num % 2;
+        //     binary += lastDigit*pow;
+        //     pow *= 10;
+        //     num = num/2;
+        // }
+        
+        // System.out.println(binary);
+        // int decimal = 0, pow = 1;
+        // while(num > 0){
+        //     int lastDigit = num%10;
+        //     decimal += lastDigit*pow;
+        //     pow *= 2;
+        //     num = num/10;
+        // }
+        
+        // System.out.println(decimal);
+        
+    }
+}
+
+
+
+
+
+
+// public class MyClass {
+    import java.util.Scanner;
+
+// public class sumorproduct {
+//     public static int add(int n) {
+//         int res=0;
+//         for (int i = 0; i <= n; i++) {
+//             res +=i;
+            
+//         }
+//         return res;
+//     }
+//     public static int factorial(int n) {
+//         int res2 =1;
+//         for (int i = 1; i <= n; i++) {
+//             res2 *= i;
+            
+//         }
+//         return res2;
+//     }
+
+    public static void main(String[] args) {
+        // Scanner sc = new Scanner(System.in);
+        // int num = s.nextInt();
+        // int decimal = 0, pow = 1;
+        // while(num > 0){
+        //     int lastDigit = num%10;
+        //     decimal += lastDigit*pow;
+        //     pow *= 2;
+        //     num = num/10;
+        // }
+        
+        // System.out.println(decimal);
+        
+        
+        // Scanner sc = new Scanner(System.in);
+        // System.out.println("N = ");
+        // int n = sc.nextInt();
+        // System.out.println("Enter 1 or 2 : ");
+        // int choice = sc.nextInt();
+        // if(choice==1){
+        //     int result1=add(n);
+        //     System.out.println(result1);
+            
+        // }else if(choice ==2){
+        //     int result2 = factorial(n);
+        //     System.out.println(result2);
+            
+        // }else
+        // System.out.println("-1");
+        
+        // sc.close();
+//     }
+// }
+
+//     public static char gretest(int n1,int n2,int n3) {
+// 		if(n1>=n2 && n1>=n3) {
+// 			System.out.println(n1+" greatest");
+// 			return n1;
+// 		}
+// 		else if(n2>=n3 && n2>=n1){
+// 			System.out.println(n2+ " greatest");
+// 			return n2;
+// 		}
+// 		else
+// 			System.out.println(n3+ " greatest");
+// 		return n3;
+		
+// 	}
+
+//     public static void main(String args[]) {
+//       Scanner sc=new Scanner(System.in);
+// 		int n=sc.nextInt();
+// 		int m=sc.nextInt();
+// 		int k=sc.nextInt();
+		
+// 	int num= gretest(n,m,k);
+// System.out.println(num);
+    }
+}
