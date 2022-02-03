@@ -54,9 +54,19 @@ public class BitwiseOperator {
         System.out.println(b);*/
 
         // unary bitwise not
-      /*  int a = 25; // 1 1 0 0 1
-        //0 0 1 1 0
+        // int ---> 4 bytes = 8*4 = 32 bites
+       /* int a = 1000;  // 0 0 0 0 0 0 --------27 Zerores ------ 1 1 0 0 1
+                     // 1 1 1 1 1 1 ---------27 Ones----------0 0 1 1 0 ---> 1's compliment = ~
+                    // MSB ---> Most Significant Bit : 0 --> +ve, 1 ---> -ve
+                    // - ve number
+                    // Binary --> Decimal : 2's compliment = 1's Compliment + 1
+                    //                                     = 25 + 1 = 26
+                    //                                     = -26
+                    // shortcut : ~ num  = -(num +1)
+
         System.out.println(~a);*/
+
+
 
         // XOR -->  AND + OR
 
@@ -75,13 +85,6 @@ public class BitwiseOperator {
         // Using ternary operator
        /* isEven = input % 2 == 0 ?  "Even" : "Not Even";
         System.out.println(isEven);*/
-
-        int  greater;
-        int a = 500, b= 70, c= 40;
-        greater = a>b? a>c ? a : c : b>c ? b :c;
-        System.out.println(greater);
-
-
 
     }
 
