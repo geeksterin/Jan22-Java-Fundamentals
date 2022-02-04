@@ -1,0 +1,98 @@
+Some mcqs:- 
+1.int x = 15;
+    int y = x++;
+    int z = ++x;
+    System.out.println(y + “ “ + z);      //16 17
+
+2. int main() 
+{        
+         int g = 3;
+         System.out.println(++g * 8);
+}   //32
+
+3. int main()
+{
+    int x = 10;
+    int y = 20;
+    if(x++ > 10 && ++y > 20 ){
+    System.out.println("Inside if");
+    } else{
+    System.out.println("Inside else");
+    }
+    System.out.println(x + “ “ + y);
+}                       //Inside else 11 20 
+
+4. int main()
+{
+    int x = 10;
+    int y = 20;
+    if(x++ > 10 || ++y > 20 ){
+    System.out.println("Inside if");
+    } else{
+    System.out.println("Inside else");
+    }
+    System.out.println(x + “ “ + y);
+}                              //Inside if 11 21
+
+5. for(int i = 0; i < 5; i = i + 1){
+    System.out.println(i +  " ");
+    i = i + 1;
+}       //0 2 4 
+
+
+6.  for(int i = 1; i < 5; i = i + 1){
+    System.out.println(i << " ");
+    i = i - 1;
+}             //infinite 1s
+
+
+7.for(int i = 0; i < 5; i = i + 1) {
+     if(i == 2) 
+           continue;
+    System.out.println(i << " ");
+ }                //0 1 3 4
+
+8. int i = 1;
+while(i < 5) {
+    if(i == 3) {
+        break;
+    }
+    System.out.println(i << " ");
+    i++;
+}                //1 2 
+
+9. int i = 1;
+while(i < 3) {
+    int j = 1;
+    while(j < 5) {
+        if(j == 3) {
+            break;
+        }
+        System.out.println(j << " ");
+        j++;
+    }
+    i++;
+}              //1 2 1 2 
+
+10.   int main() {
+    int a = 10;
+    if(a > 5) {
+        int a = 100;
+    }
+    else {
+        int a = 110;
+    }
+    System.out.println(a);
+}
+
+
+1.Write a program to print the power of 7 raised to 5.
+2.Write a program to calculate the sum of the first and the second last digit of a 5 digit.
+E.g.- NUMBER : 12345        OUTPUT : 1+4=5
+3.add-two-numbers-without-using-arithmetic-operators/
+4.substract-two-numbers-without-using-arithmetic-operators/
+5.multiply a number by 2 using bitwise operator
+6.Divide a number by 2 using bitwise operator
+
+
+Homework:- https://www.codesdope.com/practice/java-operators/
