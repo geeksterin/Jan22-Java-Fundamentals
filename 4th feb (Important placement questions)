@@ -94,5 +94,29 @@ E.g.- NUMBER : 12345        OUTPUT : 1+4=5
 5.multiply a number by 2 using bitwise operator
 6.Divide a number by 2 using bitwise operator
 
+Code we discussed:- /*
+WAP to add two numbers but we are not going to use arthmatic operators;
+10 + 12 => 22   
+*/
+public class MyClass {
+    
+    // public static int substractWithoutArthmaticOpeartors(int a, int b){ // a= 27 , b=15 
+    //     for(int i=1;i<=b;i++){        // i=1;check condition;a--,i++
+    //         a--;
+    //     }
+    //     return a;
+    // }
+    public static void main(String args[]) {
+      
+        //5 => 5*2=>10, 1342*2=> 2684
+        //5 => 5/2 =>2.5 => 2
+        
+        // int a  = 30;  //
+        // System.out.println(a>>1);
+        
+        System.out.println(Math.pow(2,3));   //2-> base ,  3-> exponent/power
+    }
+}
+
 
 Homework:- https://www.codesdope.com/practice/java-operators/
