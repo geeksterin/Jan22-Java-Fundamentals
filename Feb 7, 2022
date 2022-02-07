@@ -1,0 +1,51 @@
+public class MyClass {
+    public static void main(String args[]) {
+     String str = "malylam";   //012345679
+    //  System.out.println(str.length());
+    // char ch = 'z';
+    
+    // for(int i=0;i<str.length();i++){
+    //     if(str.charAt(i) == ch){
+    //         System.out.println("Yes " + ch + " is present in the string");
+    //         break;
+    //     }
+    //     System.out.println("No");
+    //     break;
+    // }
+    // System.out.println("No");
+    
+//   System.out.println(str.replaceAll(" ", ""));
+
+    // String ans = "";
+    // for(int i=0;i<str.length();i++){
+    //     if(str.charAt(i) == ' '){
+    //         continue;
+    //     }
+    //     ans = ans +str.charAt(i);
+    // }
+    
+    // System.out.println(ans);
+    
+    // for(int i=0;i<str.length();i++){
+    //     for(int j=i;j<str.length();j++){
+    //         System.out.println(str.substring(i,j+1));//abc   i->a , ja,b,c
+    //     }
+    // }
+    
+    
+    //check palindrome of a string
+    // malylam
+    
+    
+    
+    
+    }
+}
+
+// str = "abc" => all the substrings of abc => 8,9
+
+
+// String anything = "abc def ghi jkl mno";
+// ans = "abcdefghijklmno";
+
+// String= ,ch = 'i'    if(i is present in string ) print yes else print no.
