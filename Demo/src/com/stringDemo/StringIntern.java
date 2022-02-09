@@ -13,5 +13,7 @@ public class StringIntern {
          name1.intern();
         //boolean isTrue1 = name == name1.intern();
         System.out.println(name == name1);
+
+
     }
 }
