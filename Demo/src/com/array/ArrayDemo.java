@@ -1,5 +1,7 @@
 package com.array;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ArrayDemo {
@@ -24,6 +26,7 @@ public class ArrayDemo {
 
         //collection of string
         String[] name = new String[10];
+        System.out.println(name.getClass().getName());
 
         // Traversing & Insertion of elements/data in array
 
@@ -55,12 +58,5 @@ public class ArrayDemo {
         for(int i=0;i<name.length; i++){
             System.out.println("Name of Student "+ (i+1)+" "+ name[i]);
         }
-
-        rollNumbers[11]= 11;
-
-
-
-
-
     }
 }
