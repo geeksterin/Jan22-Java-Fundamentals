@@ -1,14 +1,17 @@
 package com.geekster.matricespractice;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class MatricesPractice {
 
 	public static void main(String[] args)
 	{
-		int[][] input1 = {{1,0,1},{1,3,4}};
+		int[][] input1 = {{1,2,4},{2,3,6}, {1,7,8}};
 		int[][] input2 = {{1,0,1},{1,2,4}};
 		int[][] inputIdentity = {{1,0,0},{0,1,0}, {0,0,1}};
+		int[][] inputTriangular = {{1,2,3},{0,5,6}, {0,0,9}};
+		
 		
 		//Check if matrices are identical
 		boolean isIdentical = isIdenticalMatrix(input1, input2);
@@ -24,6 +27,16 @@ public class MatricesPractice {
 		//Check if matrices are identical
 		boolean isIdentity = isIdentityMatrix(inputIdentity);
 		System.out.println("Is Identity Matrix? :  " + isIdentity);
+		
+		//Find Max in a row
+		findMaxInRow(input1);
+		
+		//Transpose Matrix
+		transposeMatrix(input1);
+		
+		//Check Upper Triangular matrix
+		boolean isTriangular = upperTriangularMatrix(inputTriangular);
+		System.out.println("Is Upper Triangular Matrix? :  " + isTriangular);
 	}
 	
 	
@@ -94,13 +107,7 @@ public class MatricesPractice {
 		}
 		
 		
-		System.out.println("Matrix elements are : ");
-		for(int i =0; i< numRows; i++)
-		{
-			for(int j =0; j<numColumns ;j++)
-				System.out.print(inputMatrix[i][j] + " ");
-			System.out.println();
-		}
+		
 		
 	}
 	
@@ -121,6 +128,84 @@ public class MatricesPractice {
 		return true;
 	}
 
+	private static void transposeMatrix(int[][] arr)
+	{
+		int numRows = arr.length;
+		int numCols = arr[0].length;
+		
+		int[][] tranposeMatrix = new int[numCols][numRows];
+		
+		for(int i =0; i< numCols ;i++)
+		{
+			for(int j =0; j< numRows; j++)
+			{
+				tranposeMatrix[i][j] = arr[j][i];
+			}
+		}
+		
+		System.out.println("Original Matrix : ");
+		printMatrix(arr);
+		
+		System.out.println("Transpose Matrix : ");
+		printMatrix(tranposeMatrix);
+		
+
+	}
+	
+	private static void printMatrix(int[][] input)
+	{
+		System.out.println("Matrix elements are : ");
+		for(int i =0; i< input.length; i++)
+		{
+			for(int j =0; j<input[0].length ;j++)
+				System.out.print(input[i][j] + " ");
+			System.out.println();
+		}
+	}
+	
+	private static boolean upperTriangularMatrix(int[][] input)
+	{
+		int numRows = input.length;
+		int numCols = input[0].length;
+		
+		//Square Matrix
+		if(numRows != numCols)
+			return false;
+		
+		for(int i =0; i< numRows; i++)
+		{
+			for(int j=0; j< numCols; j++)
+			{
+				
+				if(i>j && input[i][j] !=0 )
+					return false;
+				
+				else if(i<= j && input[i][j] == 0)
+					return false; 
+				
+				
+			}
+		}
+		return true;
+	}
+	
+	private static void findMaxInRow(int[][] input)
+	{
+		int numRows = input.length;
+		int[] resultArray = new int[input.length];
+		
+		for(int i =0; i< numRows; i++)
+		{
+			int max = 0;
+			for(int j=0; j< input[0].length; j++)
+				max = Math.max(max, input[i][j]);
+				
+			resultArray[i] = max;
+		}
+		System.out.println("Max Elements Array : " + Arrays.toString(resultArray));
+	}
 }
+
+
 
 
