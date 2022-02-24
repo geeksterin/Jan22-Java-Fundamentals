@@ -2,6 +2,8 @@ package com.geekster.arraypractice;
 
 import java.util.Arrays;
 
+
+
 public class ArrayCandyExample {
 
 	public static void main(String[] args)
